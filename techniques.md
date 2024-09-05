@@ -10,6 +10,9 @@ using namespace std;
 
 int main()
 {
+    // n = Size of the array
+    // mx = Minimum number in constrains
+    // fa = Frequency array
     int n,mx=-1e9;
     cin>>n;
     int arr[n];
@@ -18,9 +21,9 @@ int main()
         cin>>arr[i];
         if(arr[i]>mx) mx=arr[i];
     }
-    int frequencyArray[mx+1]{0};
-	for (int i=0;i<n;i++) frequencyArray[arr[i]]++;
-	return 0;
+    int fa[mx+1]{0};
+    for (int i=0;i<n;i++) fa[arr[i]]++;
+    return 0;
 }
 ```
 
@@ -29,21 +32,19 @@ int main()
 ## Prefix Sum
 > Use this technique when you want to get the sum of a range quickly instead of looping for the whole array.
 ```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
 int main()
 {
+    // n = Size of the array
     int n;
-    cin >> n;
+    cin>>n;
     int arr[n];
-
-	for (int i = 0; i < n; i++)
-	    cin >> arr[i];
-
-    for (int i = 1; i < n; i++)
-        arr[i] += arr[i-1];
-
+    for(int i=0;i<n;i++) cin>>arr[i];
+    for(int i=1;i<n;i++) arr[i]+=arr[i-1];
     return 0;
 }
-
 ```
 
 <br><br>
@@ -51,23 +52,21 @@ int main()
 ## Partial Sum
 > Use this technique when you want to add a number from start index to end index for an array of zeros.
 ```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
 int main()
 {
-    int n, q;
-    cin >> n >> q;
-    int arr[n+9] {0};
-
-    for (int i = 0; i < q; i++)
-    {
-        int l, r, k;
-        cin >> l >> r >> k;
-        arr[l-1] += k;
-        arr[r] -= k;
-    }
-
-    for (int i = 1; i < n; i++)
-        arr[i] += arr[i-1];
-
+    // n = Size of the array
+	  // l = Start index
+	  // r = End index
+	  // k = The number to be added to the range
+    int n,l,r,k;
+    cin>>n>>l>>r>>k;
+    int arr[n+9]{0};
+    arr[l]+=k;
+    arr[r+1]-=k;
+    for(int i=l+1;i<=r;i++) arr[i]+=k;
     return 0;
 }
 ```
