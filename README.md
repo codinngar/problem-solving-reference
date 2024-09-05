@@ -1,1 +1,3 @@
-# problem-solving-reference
+# Problem Solving Reference
+
+[Techniques](techniques.md)
