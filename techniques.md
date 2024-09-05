@@ -58,9 +58,9 @@ using namespace std;
 int main()
 {
     // n = Size of the array
-	  // l = Start index
-	  // r = End index
-	  // k = The number to be added to the range
+    // l = Start index
+    // r = End index
+    // k = The number to be added to the range
     int n,l,r,k;
     cin>>n>>l>>r>>k;
     int arr[n+9]{0};
