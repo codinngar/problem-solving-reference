@@ -5,15 +5,21 @@
 ## Frequency Array
 > Use this technique when you want to know how many times a number has been repeated or to check if the number exists or not.
 ```cpp
-int arr[] = {4, 8, 2, 7, 9, 0, 2};
-int counter[10]; // max value in the array + 1
+#include <bits/stdc++.h>
+using namespace std;
+
 int main()
 {
-	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
-	{
-		int x = arr[i];   // 0 1 2 3 4 5 6 7 8 9
-		counter[x]++;     // 1 0 2 0 1 0 0 1 1 1
-	}
+    int n,mx=-1e9;
+    cin>>n;
+    int arr[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>arr[i];
+        if(arr[i]>mx) mx=arr[i];
+    }
+    int frequencyArray[mx+1]{0};
+	for (int i=0;i<n;i++) frequencyArray[arr[i]]++;
 	return 0;
 }
 ```
