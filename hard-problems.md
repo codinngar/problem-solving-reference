@@ -9,7 +9,7 @@
 
 ## Maximum Subarray Sum
 ```cpp
-#include <bits/stdc++.h>\
+#include <bits/stdc++.h>
 using namespace std;
 
 int main()
