@@ -2,7 +2,7 @@
 
 <br><br>
 
-### Table of contents
+## Table of contents
 - [Frequency Array](#frequency-array)
 - [Prefix Sum](#prefix-sum)
 - [Partial Sum](#partial-sum)
