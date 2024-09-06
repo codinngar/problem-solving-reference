@@ -1,5 +1,5 @@
 # Problem Solving Reference
 
 <br><br>
-## Topics
-[Techniques](techniques.md)
+### [Techniques](techniques.md)
+### [Hard Problems](hard-problems.md)

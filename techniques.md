@@ -2,6 +2,13 @@
 
 <br><br>
 
+### Table of contents
+- [Frequency Array](#frequency-array)
+- [Prefix Sum](#prefix-sum)
+- [Partial Sum](#partial-sum)
+
+<br><br>
+
 ## Frequency Array
 > Use this technique when you want to know how many times a number has been repeated or to check if the number exists or not.
 ```cpp
