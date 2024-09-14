@@ -73,7 +73,7 @@ int main()
     int arr[n+9]{0};
     arr[l]+=k;
     arr[r+1]-=k;
-    for(int i=l+1;i<=r;i++) arr[i]+=k;
+    for(int i=1;i<n;i++) arr[i]+=arr[i-1];
     return 0;
 }
 ```
