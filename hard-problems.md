@@ -4,6 +4,7 @@
 
 ### Table of contents
 - [Maximum Subarray Sum](#maximum-subarray-sum)
+- [Prime Numbers](#prime-numbers)
 
 <br><br>
 
@@ -30,3 +31,25 @@ int main()
     return 0;
 }
 ```
+
+<br><br>
+
+## Prime Numbers
+
+```c++
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    int n=1e9;
+    bool p=true;
+	if(n<=1) p=false;
+	for(int i=2;i<=sqrt(n);i++)
+	{
+		if(n%i==0) p=false;
+	}
+	cout<<p;
+}
+```
+
