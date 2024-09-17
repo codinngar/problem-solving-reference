@@ -1,13 +1,9 @@
 # Techniques for problem solving
 
-<br><br>
-
 ## Table of contents
 - [Frequency Array](#frequency-array)
 - [Prefix Sum](#prefix-sum)
 - [Partial Sum](#partial-sum)
-
-<br><br>
 
 ## Frequency Array
 > Use this technique when you want to know how many times a number has been repeated or to check if the number exists or not.
@@ -34,8 +30,6 @@ int main()
 }
 ```
 
-<br><br>
-
 ## Prefix Sum
 > Use this technique when you want to get the sum of a range quickly instead of looping for the whole array.
 ```cpp
@@ -53,8 +47,6 @@ int main()
     return 0;
 }
 ```
-
-<br><br>
 
 ## Partial Sum
 > Use this technique when you want to add a number from start index to end index for an array of zeros.

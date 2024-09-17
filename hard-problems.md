@@ -1,12 +1,8 @@
 # Hard Problems Solutions
 
-<br><br>
-
 ### Table of contents
 - [Maximum Subarray Sum](#maximum-subarray-sum)
 - [Prime Numbers](#prime-numbers)
-
-<br><br>
 
 ## Maximum Subarray Sum
 ```cpp
@@ -32,8 +28,6 @@ int main()
 }
 ```
 
-<br><br>
-
 ## Prime Numbers
 
 ```c++
@@ -52,4 +46,3 @@ int main()
     p ? cout<<n<<" is prime." : cout<<n<<" is not prime.";
 }
 ```
-
